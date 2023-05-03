@@ -13,6 +13,7 @@ const inputSearch = document.querySelector("#input-search");
 const loadingObj = new Loading("modal-message", "Loading...")
 const inputName = document.querySelector('#field-name');
 const inputPrice = document.querySelector('#field-price');
+const inputPegi = document.querySelector('#field-pegi');
 
 
 let currentGame = null;
@@ -151,17 +152,22 @@ const renderGames = (searchValue) => {
 }
 const validateForm = (event) => {
     event.preventDefault();
+    // Validate each field
     if(!inputName.validity.valid) {
         alert("Nombre no válido");
         inputName.focus();
         return false;
     }
     if(!inputPrice.validity.valid) {
-        alert("Price no válido");
+        alert("Precio incorrecto");
         inputPrice.focus();
         return false;
     }
-
+    if(!inputPegi.validity.valid) {
+        alert("Pegi incorrecto");
+        inputPegi.focus();
+        return false;
+    }
     //Execute insert or update depends to button name 
     if (event.target.id === "btn-insert") {
         newGame();
