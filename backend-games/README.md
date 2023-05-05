@@ -5,11 +5,11 @@
     npm start
 
 ## Dependecies:
-    - body-parser
     - cors
     - express
     - mongoose
     - nodemon
+    - bcryptjs
 
 [https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment]!Info EXPRESS
 

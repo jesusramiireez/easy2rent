@@ -4,6 +4,7 @@ import cors from "cors";
 
 import gamesRoutes from "./routes/gamesRoutes.js";
 import categoriesRoutes from "./routes/categoriesRoutes.js"
+import usersRoutes from "./routes/usersRoutes.js"
 
 // Conexión BD
 mongoose.Promise = global.Promise;
@@ -18,6 +19,7 @@ app.use(cors());
 // Rutas
 app.use("/api", categoriesRoutes);
 app.use("/api", gamesRoutes);
+app.use("/api", usersRoutes);
 
 // Control 404. Siempre al final
 const auxRouter = express.Router();
