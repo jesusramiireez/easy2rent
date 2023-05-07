@@ -12,15 +12,20 @@ export const registerUser = async (req, res) => {
 
         // Validate user input
         if (!(email && password && name && surname)) {
-            res.status(400).send("All input is required");
+            res.status(400).json({
+                "error":true,
+                "message":"All input is required"
+            });
         }
 
-        // check if user already exist
-        // Validate if user exist in our database
+        // Check if user already exist. Validate if user exist in our database
         const oldUser = await Users.findOne({ email });
-
         if (oldUser) {
-            return res.status(409).send("User Already Exist. Please Login");
+            //return res.status(409).send("User Already Exist. Please Login");
+            return res.status(409).json({
+                "error":true,
+                "message":"User Already Exist. Please Login"
+            });
         }
 
         //Encrypt user password
@@ -35,7 +40,11 @@ export const registerUser = async (req, res) => {
         });
 
         // return new user
-        res.status(201).json(user);
+        res.status(201).json({
+            "error":false,
+            "message":"Register successful",
+            "user":user
+        }); 
     } catch (err) {
         console.log(err);
     }
@@ -64,7 +73,11 @@ export const loginUser = async (req, res) => {
 
         if (user && (await bcrypt.compare(password, user.password))) {
             // user and password are valid. Send user data
-            res.status(200).json(user); 
+            res.status(200).json({
+                "error":false,
+                "message":"Login successful",
+                "user":user
+            }); 
         }else{
             // Password is not valid
             //res.status(400).send("Invalid Credentials");

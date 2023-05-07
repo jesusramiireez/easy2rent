@@ -1,6 +1,6 @@
-export default class GameService {
+export default class CategoryService {
 
-    static URL_API= 'http://127.0.0.1:8800/api/games';
+    static URL_API= 'http://127.0.0.1:8800/api/categories';
     static HEADERS = {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -24,7 +24,7 @@ export default class GameService {
             .catch(error => error);
     }
 
-    static async insert(params) {
+    static insert(params) {
         const options = {
             method: 'POST',
             headers: this.HEADERS,

@@ -1,5 +1,5 @@
-import CategoryService from "./CategoryService.js";
-import Loading from "./Loading.js";
+import CategoryService from "./services/CategoryService.js";
+import Loading from "./components/Loading.js";
 import { scrollToHash } from "./util.js";
 const listContainer = document.querySelector('#list-container');
 const btnInsert = document.querySelector('#btn-insert');
@@ -165,7 +165,6 @@ function init() {
     btnUpdate.addEventListener("click", validateForm);
     // Reiniciamos el formulario por si hay datos precargados
     form.reset();
-
 }
 
 init();

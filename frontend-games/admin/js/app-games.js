@@ -1,6 +1,6 @@
-import GameService from "./GameService.js";
-import CategoryService from "./CategoryService.js";
-import Loading from "./Loading.js";
+import GameService from "./services/GameService.js";
+import CategoryService from "./services/CategoryService.js";
+import Loading from "./components/Loading.js";
 import { scrollToHash } from "./util.js";
 const listContainer = document.querySelector('#list-container');
 const selectCategory = document.querySelector('#field-category');
@@ -14,7 +14,6 @@ const loadingObj = new Loading("modal-message", "Loading...")
 const inputName = document.querySelector('#field-name');
 const inputPrice = document.querySelector('#field-price');
 const inputPegi = document.querySelector('#field-pegi');
-
 
 let currentGame = null;
 
@@ -102,7 +101,6 @@ const populateGames = (items) => {
                 <td>${e.price}</td>
                 <td>${e.cover}</td>
                 <td>${e.category.name}</td>
-                <td>${e.description}</td> 
                 <td class="text-center">
                     <button id="btn-delete-${e.id}" class="btn btn-danger btn-delete">Delete</button>
                     <button id="btn-edit-${e.id}" class="btn btn-info btn-edit" >Edit</button>
