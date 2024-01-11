@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header .login-panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    font-size: 12px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    border-radius: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+    font-weight: bold;
+}
+.logo{
+    font-size: 20px;
+}
+
+header .login-panel i{
+    padding-right: 0.5rem;
+    font-size: 12px;
+}
+
+header .login-panel a{
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(43, 42, 42);
+}
+
+.nav-bar a{
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    height: 3rem;
+    width: 20%;
+}
+
+.welcome{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 26px;
+}
+
+.img{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-panel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+#info-panel .info-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    height: 4rem;
+    width: 13%;
+}
+
+#info-panel i{
+    font-size: 32px;
+    padding-right: 3rem;
+}
+
+#info-panel p{
+    font-size: 14px;
+}
+
+#info-panel a{
+    color: white;
+}
+
+#explore-link{
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgba(43, 42, 42);
+    background-color: rgba(43, 42, 42, 0);
+    color: rgba(43, 42, 42);
+}
+
+#explore-link .text a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.explore:hover{
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.services{
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#explore a{
+    color:  rgba(43, 42, 42);
+    text-decoration: none;
+    font-weight: 20px;
+    font-weight: bold;
+}
+
+.services h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+#service-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.service-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 5rem;
+    background-color:  rgba(43, 42, 42, 0);
+    border: 1px solid rgba(43, 42, 42);
+    color: rgba(43, 42, 42);
+    margin-top: 2rem;
+    border-radius: 200px;
+}
+
+.service-card i{
+    font-size: 30px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+footer{
+    background-color: rgba(43, 42, 42);
+    color: white;
+}
+
+footer h4{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 1rem;
+}
+
+footer .info-footer{
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .desc{
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+#car-container{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.car-card{
+    margin: 0 auto;
+    width: 60%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(43, 42, 42);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.car-card .image-container{
+    width: 30%;
+    height: 10rem;
+    display: flex;
+}
+
+.car-card .image-container img{
+    width: 100%;
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-top: -2rem;
+}
+
+.marca{
+    padding-right: 0.5rem;
+}
+
+.car-card .card-title img{
+    width: 10%;
+}
+
+.car-card .car-information{
+    width: 50%;
+    height: 10rem;
+}
+
+.car-card .car-attributes{
+    width: 100%;
+    color: rgb(82, 82, 82);
+    height: 4rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.car-card .car-attributes i{
+    width: 20%;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.car-card .card-bottom {
+    width: 25%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+#num-coches{
+    background-color: rgb(43, 42, 42);
+    font-weight: bold;
+    color:white;
+    display:inline-block;
+    margin-right:10px;
+    border-radius:100px;
+    width: 25px;
+    text-align: center;
+}
+
+.borrar-coche {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+.cancelacion{
+    padding-top: 1rem;
+    font-size: 11px;
+    color: green;
+    margin-bottom: 1rem;
+}
+
+.button-continuar{
+    width: 60%;
+    height: 2rem;
+    background-color: rgb(16, 148, 16);
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+.button-continuar:hover{
+    cursor: pointer;
+}
+
+
+.card-bottom .price-intro{
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+.card-bottom img{
+    width: 20%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#valorations-container{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    padding-top: 1.5rem;
+}
+
+#rating-text{
+    padding-left: 0.5rem;
+    font-size: 16px;
+}
+
+.rating-box-Genial{
+    background-color: rgb(66, 201, 25);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 10%;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-box-Bien{
+    background-color: rgb(223, 196, 45);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 10%;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-box-Mal{
+    background-color: rgb(223, 116, 45);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 10%;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-box-Excelente{
+    background-color: rgb(33, 178, 245);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 10%;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.search-box{
+    border: 1px solid black;
+    border-radius: 200px;
+    padding: 0.5rem 1rem;
+    width: 40%;
+}
+
+.search-section input{
+    height: 2rem;
+    border: none;
+    width: 90%;
+}
+
+.search-box i:hover{
+    cursor: pointer;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    
+}
+
+.submenu {
+    position: relative;
+  }
+.submenu #carrito {
+    display: none;
+    overflow:scroll;
+    max-height: 90vh;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+  
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+  }
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+#lista-carrito {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#lista-carrito th,
+#lista-carrito td {
+  padding: 8px;
+  text-align: left;
+}
+
+#lista-carrito th {
+  background-color: #f2f2f2;
+}
+
+#lista-carrito tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#lista-carrito tr:hover {
+  background-color: #e1e1e1;
+}
+
+/* Define column widths */
+#lista-carrito th:nth-child(1),
+#lista-carrito td:nth-child(1) {
+  width: 25%;
+}
+
+#lista-carrito th:nth-child(2),
+#lista-carrito td:nth-child(2) {
+  width: 25%;
+}
+
+#lista-carrito th:nth-child(3),
+#lista-carrito td:nth-child(3) {
+  width: 25%;
+}
+
+#lista-carrito th:nth-child(4),
+#lista-carrito td:nth-child(4) {
+  width: 25%;
+}
+#vaciar-carrito {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #adadad;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+#vaciar-carrito:active {
+  background-color: #646464;
+}
+  
+  
+  
+
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* Mobile */
+@media (max-width: 900px) {
+    .car-card{
+        width: 90%;
+    }
+    .car-card .image-container{
+        width: 35%;
+    }
+    .search-box{
+        width: 90%;
+    }
+    
+}

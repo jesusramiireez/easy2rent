@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coches</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script defer src="./js/car.js" type="module"></script>
+    <script defer="defer" src="./js/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="logo">easy2rent</a>
+        <div class="two columns u-pull-right">
+            <ul>
+               <li class="submenu">
+                  <img src="img/cart.png" id="img-carrito">
+                  <div id="num-coches"></div>
+                  <div id="carrito">
+                     <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                           <tr>
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Marca</th>
+                              <th>Precio</th>
+                              <th></th>
+                           </tr>
+                        </thead>
+                        <tbody></tbody>
+                     </table>
+                     <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+    </header>
+    <div class="nav-bar">
+        <a href="">Todos nuestros coches</a>
+        <a href="./index.html">Servicios</a>
+        <a href="./contacto.html">Contacto</a>
+    </div>
+    <div class="search-section">
+        <div class="search-box">
+            <input id="search-input" type="search" placeholder="¿Que coche buscas?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <main id="car-container">
+
+    </main>
+    <footer>
+        <h4>easy2rent</h4>
+        <div class="info-footer">
+            <p>Privacidad</p>
+            <p>Terminos y condiciones</p>
+            <p>© 2023 Jesús</p>
+        </div>
+        <div class="desc">
+            <p>Alquiler de coches baratos en Palma. Encuentra las mejores ofertas de alquiler de coches en Palma.</p>
+        </div>
+    </footer>
+</body>
+</html>

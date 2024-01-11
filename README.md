@@ -1,2 +1,2 @@
-# GAME NODE PROJECT
-Basic project with backend and frontend code.
+# easy2rent project
+ASIX, LLM Final Project.
